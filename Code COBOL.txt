@@ -1,0 +1,23 @@
+IDENTIFICATION DIVISION.
+PROGRAM-ID. Calculadora.
+DATA DIVISION.
+    WORKING-STORAGE SECTION.
+        01 X PIC 99.
+        01 Y PIC 99.
+        01 S PIC 99.
+        01 D PIC 99.
+        01 SUB PIC 99.
+        01 M PIC 99.
+        
+PROCEDURE DIVISION.
+    SET X TO 15.
+    SET Y TO 5.
+    ADD X Y GIVING S.
+    COMPUTE SUB = X - Y.
+    COMPUTE M = X * Y.
+    COMPUTE D = X / Y.
+    DISPLAY "A soma dos valores é: "S.
+    DISPLAY "A subtração dos valores é: " SUB.
+    DISPLAY "A multiplicação dos valores é: " M.
+    DISPLAY "A divisão dos valores é: " D.
+STOP RUN.
